@@ -40,7 +40,7 @@ export default class Cl_vInventario extends Cl_vGeneral {
         if (!serial) return;
         let marca = prompt("Ingrese la marca del dispositivo:");
         if (!marca) return;
-        let modelo = prompt("Ingrese el modelo del dispositivo (opcional):");
+        let modelo = prompt("Ingrese el modelo del dispositivo:");
         if (!modelo) return;
         this.controlador!.agregarDispositivo({
             dispositivoData: {
