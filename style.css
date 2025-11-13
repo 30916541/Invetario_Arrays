@@ -38,6 +38,10 @@ button {
 
 button:hover {
     background-color: #222;
+    transition: transform 180ms cubic-bezier(.2,.8,.2,1), box-shadow 180ms cubic-bezier(.2,.8,.2,1);
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.18);
+    will-change: transform, box-shadow;
 }
 
 table {
@@ -60,6 +64,7 @@ th {
 }
 
 td {
+    text-align: left;
     padding: 12px;
     border-bottom: 1px solid #eee;
 }
@@ -72,10 +77,22 @@ tbody tr:nth-child(odd) {
     background-color: #fff;
 }
 
-tbody tr:hover {
-    background-color: #f0f0f0;
+tbody tr:nth-child(odd):hover {
+    background-color: #d4d4d4;
+    transition: background-color 150ms ease, transform 120ms ease;
+    transform: translateX(2px);
 }
 
+tbody tr:nth-child(even):hover {
+    background-color: #eeeeee;
+    transition: background-color 150ms ease, transform 120ms ease;
+    transform: translateX(2px);
+}
+
+table:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+    transition: background-color 150ms ease;
+}
 #inventario_divDispositivosRegistrados td {
     color: #333;
 }
