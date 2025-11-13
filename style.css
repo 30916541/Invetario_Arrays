@@ -1,6 +1,3 @@
-/* Estilos básicos y minimalistas para la aplicación de inventario */
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Títulos */
 h3 {
     color: #222;
     margin-bottom: 20px;
@@ -23,7 +19,6 @@ h3 {
     font-weight: normal;
 }
 
-/* Sección principal */
 section {
     margin-bottom: 30px;
     background-color: #fff;
@@ -31,7 +26,6 @@ section {
     border: 1px solid #ddd;
 }
 
-/* Botón */
 button {
     background-color: #333;
     color: #fff;
@@ -46,7 +40,6 @@ button:hover {
     background-color: #222;
 }
 
-/* Tabla */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -71,7 +64,6 @@ td {
     border-bottom: 1px solid #eee;
 }
 
-/* Filas alternadas para mejor visualización */
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -84,7 +76,6 @@ tbody tr:hover {
     background-color: #f0f0f0;
 }
 
-/* Estilos para elementos dinámicos */
 #inventario_divDispositivosRegistrados td {
     color: #333;
 }
